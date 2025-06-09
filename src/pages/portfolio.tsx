@@ -272,7 +272,7 @@ export function PortfolioPage() {
                     fill="#8884d8"
                     dataKey="value"
                   >
-                    {setupData.map((entry, index) => (
+                    {setupData.map((_, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
